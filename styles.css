@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --roman-red: #c8102e; /* A deep, rich red reminiscent of Roman banners and togas */
+  --imperial-gold: #d4af37; /* A warm, metallic gold reflecting the opulence of Roman architecture */
+  --stone-gray: #8c8c8c; /* A neutral, stone-like gray to represent Roman marble */
+  --earth-brown: #6f4f28; /* A deep brown representing the earthy tones of Roman bricks and pottery */
+  --ivory-white: #f8f8f0; /* A soft, off-white color for a subtle and elegant background */
+}
+
+body {
+  background: rgb(212, 175, 55);
+  background: radial-gradient(
+    circle,
+    rgba(212, 175, 55, 1) 0%,
+    rgba(255, 255, 255, 1) 32%
+  );
+  color: var(--stone-gray);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--imperial-gold);
+}
+
+.title {
+  font-family: "Gideon Roman", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.all-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.form-div {
+  align-self: center;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 3rem;
+  background-color: var(--earth-brown);
+  border-radius: 1rem;
+}
+
+.form-div > form > input {
+  width: 60%;
+  height: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--stone-gray);
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.form-div > form > button {
+  width: 60%;
+  height: 3rem;
+  background-color: var(--imperial-gold);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.form-div > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
