@@ -1,7 +1,7 @@
-const btn = document.getElementById("submit-btn");
+const btn = document.getElementById("convert-btn");
 btn.addEventListener("click", (e) => {
   e.preventDefault();
-  const input = document.getElementById("number-input");
+  const input = document.getElementById("number");
   const intInput = parseInt(input.value);
   const result = document.getElementById("res");
 
@@ -9,11 +9,15 @@ btn.addEventListener("click", (e) => {
   input.value = "";
 
   if (!intInput) {
-    result.textContent = "Hey, that's not a valid input :]";
+    result.textContent = "Please enter a valid number";
+    return;
+  }
+  if (intInput < 0) {
+    result.textContent = "Please, enter a number greater than or equal to 1";
     return;
   }
   if (intInput > 3999) {
-    result.textContent = "Please, write a number less than or equal to 3999.";
+    result.textContent = "Please, write a number less than or equal to 3999";
     return;
   }
 
